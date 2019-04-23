@@ -3,15 +3,16 @@ version: 2
 
 jobs:
   build:
-    machine: true
+    docker:
+      - image: circleci/python:3.7.2
 
     steps:
       - checkout
 
       - run:
-          name: Run molecule test
+          name: execute hello world
           command: |
             pip install pipenv
-            pipenv sync
+            pipenv install
             cd my-new-role
             pipenv run molecule test
