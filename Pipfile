@@ -7,6 +7,7 @@ verify_ssl = true
 molecule = "*"
 
 [packages]
+molecule = {extras = ["docker"],version = "*"}
 
 [requires]
 python_version = "3.7"
