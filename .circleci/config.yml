@@ -3,6 +3,8 @@ version: 2
 
 anchors:
   DEFAULTS: &DEFAULTS
+    docker:
+      - images: circleci/python:3.7.2
     machine: true
     environment:
       PIPENV_VENV_IN_PROJECT: true
