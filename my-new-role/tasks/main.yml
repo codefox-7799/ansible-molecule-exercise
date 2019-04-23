@@ -1,2 +1,6 @@
 ---
 # tasks file for my-new-role
+- name: Molecule Hello World!
+  copy:
+    dest: /tmp/molecule_hello_world
+    content: Molecule Hello World!
