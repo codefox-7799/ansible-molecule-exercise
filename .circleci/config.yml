@@ -9,7 +9,7 @@ jobs:
       - checkout
 
       - run:
-          name: execute hello world
+          name: Run molecule test
           command: |
             pip install pipenv
             pipenv sync
